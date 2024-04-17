@@ -1,0 +1,64 @@
+.top-left-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.background-image {
+  width: 100%; /* Adjust as needed */
+}
+
+.horizontal-navigation {
+  text-align: center;
+}
+
+.horizontal-navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.horizontal-navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+}

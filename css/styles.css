@@ -6,108 +6,57 @@
   width: 5px;
 }
 .background-image {
-  position: center;
+  /* position: center; */
   /* top: 5px; */
   /* align-items: center; */
   width: 100%;
+  
   /* box-sizing: content-box; */
   /* height: 70px; */
 }
 
- nav {
-   background-color: #04f962;
-   padding: 10px;
-   text-align: center;
- }
+.navbar {
+  padding: 5px;
+  text-align: center;
+}
 
- nav a {
-   display: inline-block;
-   margin-right: 20px;
-   color: #333;
-   text-decoration: none;
- }
+.navbar a {
+  display: inline-block;
+  padding: 5px 10px;
+  /* Add padding to create space around the text */
+  color: #333;
+  text-decoration: none;
+  background-color: #04f962;
+  /* Set background color for the anchor elements */
+}
 
- nav a:hover {
-   color: #f50626;
- }
+.navbar a:hover {
+  color: #f50626;
+}
+
 
 
 .vertical-navigation {
-  display: flex; 
-  flex-direction: column; 
-  border: aqua;
-
-}
-.line-break {
-  color: black;
-}
-.container {
-  display: flex;
+  float: left;
+  /* Float the navigation bar to the left */
+  width: 150px;
+  /* Set a fixed width for the navigation bar */
+  background-color: #03e128;
+  padding: 10px;
 }
 
-.vertical-navigation {
-  flex: 0 0 200px;
-  /* Fixed width for the sidebar */
+.vertical-navigation nav a {
+  display: block;
+  margin-bottom: 10px;
+  /* Add some spacing between links */
+  color: #333;
+  text-decoration: none;
 }
 
 .start-of-text {
-  flex: 1;
-  /* Occupy remaining space */
-  padding-left: 20px;
-  /* Add spacing between sidebar and text */
-}
-.sb1 a {
-  /* color: green;  */
-  margin: 3px;
-  background-color: green;
-  padding: 1px;   
-  bottom:10px;  
-  font-size:medium;  
-}
-.sb2 a{
-  font-size: medium;
-  margin: 3px;
-  background-color: green;
-  /* padding: 10px; */
-  bottom:20px;
-}
-.sb3 a{
-  margin: 3px;
-  background-color: green;
-  /* padding: 15px; */
-  bottom:30px;
-}
-.sb4 a{
-  margin: 3px;
-  background-color: green;
-  /* padding: 10px; */
-}
-.sb5 a{
-  margin: 3px;
-  background-color: green;
-  /* padding: 10px; */
-}
-.sb6 a{
-  margin: 3px;
-  background-color: green;
-  /* padding: 10px;  */
-}
-
-
-.start-of-text{
-      width: calc(100% - 25px);
-      /* Adjusted width to accommodate for the quarter spacing */
-      padding: 8px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    
-}
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  margin-left: 180px;
+  /* Adjust margin to create space for the navigation bar */
+  /* You may need to adjust this margin based on the width of your navigation bar */
 }
 
 .footer1 {
@@ -119,7 +68,7 @@
   right: 65px;
 }
 
-.footer3 {
+.footer2 {
   text-align: center;
   top: 20px;
   left: 20px;
@@ -129,7 +78,7 @@
 
 .h1 {
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans MT";
 }
 .roboto-black {
   font-family: "Roboto", sans-serif;
@@ -137,7 +86,7 @@
   font-style: normal;
 }
 
-img {
+/* img {
   display: block;
   margin: 0 auto;
-}
+} */

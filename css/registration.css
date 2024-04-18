@@ -60,9 +60,10 @@ input[type="clear"] {
     background-color: #ff6600;
     color: #fff;
     border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
+    border-radius: 2px;
+    padding: 9px ;
+    text-align: center;
+    /* cursor: pointer; */
 }
 
 input[type="clear"]:hover {

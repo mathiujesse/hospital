@@ -1,69 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="" />
-    <title>Registration</title>
-    <meta name="description" content="" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/registration.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="overview">
-      <h1>Patient Registration</h1>
-    </div>
-    <div class = "entry1">
-<label for="name">PatientID:</label>
+<html lang="en">
 
-<input type="number" id="PatientID" name="name" required minlength="4" maxlength="8" size="10" />
-    </div>
-    <div class = "entry2">
-<label for="name">First Name</label>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Details Form</title>
+  <link rel="stylesheet" href="/css/registration.css" />
 
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-    </div>
+</head>
 
-    
-<div class="entry3">
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+<body>
+  <h2>Patient Details</h2>
+  <form>
+    <label for="patientid">Patient ID:</label><br>
+    <input type="text" id="patientid" name="patientid"><br>
 
-<label for="name">Middle Name</label>
-</div>
-    
-<div class ="entry4">
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname"><br>
 
-<label for="name">Surname</label>
-</div>
-    <div class="entry5">
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-<label for="name">Date of Birth</label>
-    </div>
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" id="lastname" name="lastname"><br>
 
-    
-<div class ="entry6">
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-<label for="name">Gender</label>
-</div>
-    <div class ="entry7">
-      <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-      <label for="name">County</label>
-    </div>
+    <label for="surname">Surname:</label><br>
+    <input type="text" id="surname" name="surname"><br>
 
-    
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br>
 
-    <div class = "button-submit"><button>
-      <p>Submit</p>
-    </button>
-      </div>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="/js/registration.js" async defer></script>
-  </body>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+
+    <label for="county">County:</label><br>
+    <select id="county" name="county">
+      <option value="county1">Nairobi</option>
+      <option value="county2">Kisumu</option>
+      <option value="county3">Voi</option>
+      <option value="county4">Kilifi</option>
+      <option value="county5">Mombasa</option>
+      <option value="county6">Kwale</option>
+      <option value="county7">Tana River</option>
+      <option value="county8">Lamu</option>
+      <option value="county9">Taita/taveta</option>
+      <option value="county10">Garissa</option>
+      <option value="county11">Wajir</option>
+      <option value="county12">Mandera</option>
+      <option value="county13">Marsabit</option>
+      <option value="county14">Isiolo</option>
+      <option value="county15">Meru</option>
+      <option value="county16">Tharaka nithi</option>
+      <option value="county17">embu</option>
+      <option value="county18">kitui</option>
+      <option value="county19">machakos</option>
+      <option value="county20">makueni</option>
+      <option value="county21">nyandarua</option>
+      <option value="county22">nyeri</option>
+      <option value="county23"> kirinyaga</option>
+      <option value="county24">murang'a</option>
+      <option value="county25">kiambu</option>
+      <option value="county26">turkana</option>
+
+      <!-- Add more county options as needed -->
+    </select><br>
+
+  
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
 </html>

@@ -14,49 +14,23 @@
   /* height: 70px; */
 }
 
-.container {
-  /* margin-left: 10px; */
-  /* text-align: center; */
-  display: flex;
-  
-  flex-direction: row;
-  justify-content: flex-start;
-  /* background-color: green; */
-}
+ nav {
+   background-color: #04f962;
+   padding: 10px;
+   text-align: center;
+ }
 
-.one {
-  margin-right: 10px;
-  justify-content: flex-start;
-  margin: 10px;
+ nav a {
+   display: inline-block;
+   margin-right: 20px;
+   color: #333;
+   text-decoration: none;
+ }
 
-  /* padding-left: 1px; */
-  background-color: green;
-}
-.two {
-  justify-content: flex-start;
-  margin: 10px;
-  
-  /* padding-left: 1px; */
-  background-color: green;
-}
-.three {
-  justify-content: flex-start;
-  margin: 10px;
-  /* padding-left: 1px; */
-  background-color: green;
-}
-.four {
-  justify-content: flex-start;
-  margin: 10px;
-  /* padding-left: 1px; */
-  background-color: green;
-}
-.five {
-  justify-content: flex-start;
-  margin: 10px;
-  /* padding-left: 1px; */
-  background-color: green;
-}
+ nav a:hover {
+   color: #f50626;
+ }
+
 
 .vertical-navigation {
   display: flex; 
@@ -66,6 +40,21 @@
 }
 .line-break {
   color: black;
+}
+.container {
+  display: flex;
+}
+
+.vertical-navigation {
+  flex: 0 0 200px;
+  /* Fixed width for the sidebar */
+}
+
+.start-of-text {
+  flex: 1;
+  /* Occupy remaining space */
+  padding-left: 20px;
+  /* Add spacing between sidebar and text */
 }
 .sb1 a {
   /* color: green;  */
@@ -105,9 +94,15 @@
 }
 
 
-.main-content {
-  text-align: center;
-  font-size: medium;
+.start-of-text{
+      width: calc(100% - 25px);
+      /* Adjusted width to accommodate for the quarter spacing */
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    
 }
 .roboto-regular {
   font-family: "Roboto", sans-serif;

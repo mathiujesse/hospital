@@ -8,8 +8,14 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    
 }
-
+.heading {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    background-color: antiquewhite;
+}
 form {
     background-color: #fff;
     border-radius: 8px;
@@ -43,10 +49,22 @@ input[type="submit"] {
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #ff6600;
+}
+input[type="clear"] {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="clear"]:hover {
+    background-color: #ff6600;
 }

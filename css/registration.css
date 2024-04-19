@@ -8,14 +8,16 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    
+
 }
+
 .heading {
     text-align: center;
     font-style: italic;
     font-weight: 700;
     background-color: antiquewhite;
 }
+
 form {
     background-color: #fff;
     border-radius: 8px;
@@ -56,16 +58,35 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #ff6600;
 }
-input[type="clear"] {
-    background-color: #ff6600;
-    color: #fff;
+
+input[type="reset"] {
+    background-color: #c4019a;
+    color: #f5f2f2;
     border: none;
-    border-radius: 2px;
-    padding: 9px ;
+    border-radius: 1px;
+    padding: 11px 11px 11px 11px;
     text-align: center;
-    /* cursor: pointer; */
 }
 
-input[type="clear"]:hover {
+input[type="reset"]:hover {
     background-color: #ff6600;
+}
+/* Add your CSS styles here */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    /* Add space between buttons */
+}
+
+.button:hover {
+    background-color: #ff6600;
+}
+
+#go-home-btn {
+    background-color: #c4019a;
+    /* Change background color for "Go Back Home" button */
 }

@@ -11,39 +11,42 @@
 
 <body>
   <div class="heading">
-    <h2>REGISTER PATIENT</h2>
+    <h1>REGISTER PATIENT</h1>
   </div>
-
-  <form>
+  <form id ="myForm">
     <label for="patientid">Patient ID:</label><br>
-    <input type="text" id="patientid" name="patientid"><br>
+    <input type="text" id="patientid" name="patientid" placeholder="Enter numbers only" pattern="\d*" required><br>
 
     <label for="firstname">First Name:</label><br>
-    <input type="text" id="firstname" name="firstname"><br>
+    <input type="text" id="firstname" name="firstname" required><br>
 
     <label for="lastname">Last Name:</label><br>
-    <input type="text" id="lastname" name="lastname"><br>
+    <input type="text" id="lastname" name="lastname"required><br>
 
     <label for="surname">Surname:</label><br>
-    <input type="text" id="surname" name="surname"><br>
-
+    <input type="text" id="surname" name="surname"required><br>
     <label for="dob">Date of Birth:</label><br>
-    <input type="date" id="dob" name="dob"><br>
+    <input type="date" id="dob" name="dob" required><br>
     <div id="Gender">
       <label for="gender">Gender:</label><br>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-      <input type="radio" id="other" name="gender" value="other">
-      <label for="other">Other</label><br>
+      <div class="gender-options">
+        <div>
+          <input type="radio" id="male" name="gender" value="male"required>
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female"required>
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="other" name="gender" value="other"required>
+          <label for="other">Other</label>
+        </div>
+      </div>
     </div>
-
     <div id="county">
-
-
       <label for="county">County:</label><br>
-      <select id="county" name="county">
+      <select id="county" name="county"required>
         <option value="county1">Nairobi</option>
         <option value="county2">Kisumu</option>
         <option value="county3">Voi</option>
@@ -85,13 +88,11 @@
         <option value="county39">bomet</option>
         <option value="county40">kakamega</option>
     </div>
-  <input type="submit" class="button" value="Submit">
-  <input type="reset" class="button" value="Clear">
-  <button id="go-home-btn" class="button">Go Back Home</button>
-
-
-    <!-- <input type="clear" value="Clear" />
-<button type="button" value=" -->
+    <div class="button-container">
+      <input type="submit" class="button" value="Submit">
+      <input type="reset" class="button" value="Clear">
+      <a href="/index.html" class="button">Go Home</a>
+    </div>
   </form>
 </body>
 

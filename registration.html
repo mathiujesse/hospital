@@ -10,43 +10,61 @@
 </head>
 
 <body>
+  <img src="images/AdobeStock_321068727_Preview.jpeg" alt="picture of someone writing to a paper" class="writing-image">
+
   <div class="heading">
     <h1>REGISTER PATIENT</h1>
   </div>
-  <form id ="myForm">
-    <label for="patientid">Patient ID:</label><br>
+  <form id="myForm" form action ="python/index.py" method ="post">
+    <div class="tb1">
+      <label for="patientid">Patient ID:</label><br>
+
+    </div>
     <input type="text" id="patientid" name="patientid" placeholder="Enter numbers only" pattern="\d*" required><br>
-
-    <label for="firstname">First Name:</label><br>
+    <div class="tb2">
+      <label for="firstname">First Name:</label><br>
+    </div>
     <input type="text" id="firstname" name="firstname" required><br>
+    <div class="tb3">
+      <label for="lastname">Last Name:</label><br>
 
-    <label for="lastname">Last Name:</label><br>
-    <input type="text" id="lastname" name="lastname"required><br>
-
-    <label for="surname">Surname:</label><br>
-    <input type="text" id="surname" name="surname"required><br>
-    <label for="dob">Date of Birth:</label><br>
-    <input type="date" id="dob" name="dob" required><br>
-    <div id="Gender">
+    </div>
+    <input type="text" id="lastname" name="lastname" required><br>
+    <div class="tb4">
+      <label for="surname">Surname:</label><br>
+    </div>
+    <input type="text" id="surname" name="surname"><br>
+    <div class="dob-short">
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br>
+    </div>
+    <div class="gendertb">
       <label for="gender">Gender:</label><br>
+    </div>
+
+    <div class="Gender">
+
       <div class="gender-options">
         <div>
-          <input type="radio" id="male" name="gender" value="male"required>
+          <input type="radio" id="male" name="gender" value="male" required>
           <label for="male">Male</label>
         </div>
         <div>
-          <input type="radio" id="female" name="gender" value="female"required>
+          <input type="radio" id="female" name="gender" value="female" required>
           <label for="female">Female</label>
         </div>
         <div>
-          <input type="radio" id="other" name="gender" value="other"required>
-          <label for="other">Other</label>
+          <input type="radio" id="other" name="gender" value="other" required>
+          <label for="other">Bi-sexual</label>
         </div>
       </div>
     </div>
-    <div id="county">
+    <div class="county-tb">
       <label for="county">County:</label><br>
-      <select id="county" name="county"required>
+    </div>
+    <div id="county">
+
+      <select id="county" name="county" required>
         <option value="county1">Nairobi</option>
         <option value="county2">Kisumu</option>
         <option value="county3">Voi</option>

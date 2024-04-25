@@ -10,10 +10,35 @@ h1 {
     margin-bottom: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orange;
-    
+
 
 }
-
+.writing-image{
+    width: 100%;
+}
+.tb1{
+    color: red;
+    font-family: Helvetica;
+}
+.tb2{
+    color: green;
+    font-size: medium;
+}
+.tb3{
+    color: purple;
+    font-style: italic;
+}
+.tb4{
+    color: rgb(228, 248, 5);
+    font-weight: 500;
+}
+.gendertb{
+    color: chocolate;
+    font-variant: small-caps;
+}
+.countytb{
+    color:indigo;
+}
 .heading {
     text-align: center;
     font-style: italic;
@@ -31,7 +56,9 @@ form {
     display: flex;
     flex-direction: column;
 }
-
+.dob-short{
+    padding: auto;
+}
 .gender-options {
     display: flex;
     flex-direction: column;

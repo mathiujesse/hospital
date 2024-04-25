@@ -53,12 +53,16 @@
   text-decoration: none;
 }
 
-.start-of-text {
-  margin-left: 180px;
+.text-container {
+  margin-left: 250px;
+  border: 1px solid black;
+  padding: 10px;
   /* Adjust margin to create space for the navigation bar */
   /* You may need to adjust this margin based on the width of your navigation bar */
 }
-
+.text-itself{
+  margin-left: 10px;
+}
 .footer1 {
   text-align: center;
   position: relative;

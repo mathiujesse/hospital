@@ -1,78 +1,48 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Records</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Information</title>
+  <link rel="stylesheet" href="/css/tables.css" />
 
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/scripts.js" defer></script>
-</head>
-
-<body>
-  <div class="top-left-logo">
-    <img src="/images/hospital_3063138(1).png" alt="hospital-logo on top-left" />
-  </div>
-  <div class="background-image">
-    <img class="background-image" src="/images/fromphotos.jpg" alt="clovers showing cover image" />
-  </div>
-
-  <div class="horizontal-navigation">
-    <nav>
-      <ul>
-        <li><a href="/registration.html">Registration</a></li>
-        <li><a href="/form.html">Forms</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
-        <li><a href="/records.html">Records</a></li>
-        <li><a href="/tables.html">Tables</a></li>
-        <li><a href="/index.html">Home</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="h1">
-    <h1>Welcome to Utumishi Bora Health Services</h1>
-  </div>
-
-  <form action="submit_form.php" method="post">
-    <label for="patientID">Patient ID:</label>
-    <input type="text" id="patientID" name="patientID" required><br>
-
-    <label for="middleName">Middle Name:</label>
-    <input type="text" id="middleName" name="middleName"><br>
-
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required><br>
-
-    <label for="surname">Surname:</label>
-    <input type="text" id="surname" name="surname" required><br>
-
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" required><br>
-
-    <label for="gender">Gender:</label>
-    <select id="gender" name="gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select><br>
-
-    <label for="county">County:</label>
-    <input type="text" id="county" name="county" required><br>
-
-    <input type="submit" value="Submit">
-  </form>
-
-  <footer>
-    <p class="footer1">©</p>
-    <p class="footer2">Registration Number: P15/141041/2020</p>
-    <p class="footer3">Name: Jesse Mathiu</p>
-  </footer>
-</body>
-
-</html>
+  </head>
+  
+  <body>
+    <h1>Patient Information</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>County</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Add table rows with patient data here -->
+        <tr>
+          <td>12345</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>Male</td>
+          <td>Example County</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>501</td>
+          <td>John</td>
+          <td>Dykes</td>
+          <td>Female</td>
+          <td>nakuru County</td>
+          <td>24</td>
+          
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </body>
+  
+  </html>
